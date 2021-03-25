@@ -639,6 +639,14 @@
             </attribute-definition>
         </system-attribute-definitions>
         <custom-attribute-definitions>
+            <attribute-definition attribute-id="DesktopBannerImage">
+                <display-name xml:lang="x-default">Desktop Banner Image</display-name>
+                <type>image</type>
+                <localizable-flag>false</localizable-flag>
+                <site-specific-flag>false</site-specific-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>        
             <attribute-definition attribute-id="Year">
                 <display-name xml:lang="x-default">Year</display-name>
                 <type>string</type>
