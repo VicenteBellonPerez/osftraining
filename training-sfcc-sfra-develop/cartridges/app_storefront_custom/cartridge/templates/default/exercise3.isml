@@ -1,0 +1,3 @@
+<isif condition="${dw.content.ContentMgr.getContent('exercicio3-frontend').custom.DesktopBannerImage && dw.content.ContentMgr.getContent('exercicio3-frontend').custom.DesktopBannerImage.absURL !== null}">	
+    <img src="${dw.content.ContentMgr.getContent('exercicio3-frontend').custom.DesktopBannerImage.absURL}" alt="${dw.content.ContentMgr.getContent('exercicio3-frontend').name}" title="${dw.content.ContentMgr.getContent('exercicio3-frontend').name}"/>	
+</isif>
