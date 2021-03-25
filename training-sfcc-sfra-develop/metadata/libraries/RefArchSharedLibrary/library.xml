@@ -900,6 +900,33 @@
         <page-attributes/>
     </content>
 
+    <content content-id="34230d91634d4a52e361d2765e">
+        <type>component.commerce_assets.popularCategory</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "image" : {
+    "path" : "Tops.jpg",
+    "focal_point" : {
+      "x" : 0.48,
+      "y" : 0.24
+    },
+    "meta_data" : {
+      "height" : 200,
+      "width" : 200
+    }
+  },
+  "offset" : null,
+  "catDisplayName" : "Tops for Her",
+  "imagesize" : null,
+  "category" : "womens-clothing-tops"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
     <content content-id="35ef9944c87fb28761edf389e1">
         <display-name xml:lang="x-default">Image And Text Component</display-name>
         <type>component.commerce_assets.imageAndText</type>
@@ -1074,6 +1101,25 @@ La pagina non è più disponibile: (Pagina o file non trovati: errore 404). Prov
 &lt;p&gt;我们的客户服务代表可提供帮助。 &lt;a href="$httpsUrl(CustomerService-ContactUs)$"&gt;给我们发电子邮件&lt;/a&gt; 或致电 800-555-0199。&lt;/p&gt;&#13;
 &lt;/div&gt;</custom-attribute>
         </custom-attributes>
+    </content>
+
+    <content content-id="44664ac984739d720dd3a10817">
+        <type>component.commerce_layouts.mobileGrid3r1c</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{ }</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+        <content-links>
+            <content-link content-id="34230d91634d4a52e361d2765e" type="component.commerce_layouts.mobileGrid3r1c.column1">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="eaa4ab20f2bcfc79be4240b77e" type="component.commerce_layouts.mobileGrid3r1c.column2">
+                <position>0.0</position>
+            </content-link>
+        </content-links>
     </content>
 
     <content content-id="48754edd8c9777cb6b709b49ec">
@@ -1635,6 +1681,31 @@ La pagina non è più disponibile: (Pagina o file non trovati: errore 404). Prov
     }
   },
   "heading" : null
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="96b2c29c7066193006a0027f8c">
+        <type>component.commerce_assets.mainBanner</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "image" : {
+    "path" : "Clothing.jpg",
+    "focal_point" : {
+      "x" : 0.47,
+      "y" : 0.26
+    },
+    "meta_data" : {
+      "height" : 800,
+      "width" : 800
+    }
+  },
+  "heading" : "&lt;h2&gt;Sale Page&lt;/h2&gt;",
+  "categoryLink" : "womens-clothing"
 }</data>
         <online-flag>true</online-flag>
         <online-flag site-id="RefArch">true</online-flag>
@@ -5457,6 +5528,23 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
         </content-links>
     </content>
 
+    <content content-id="eaa4ab20f2bcfc79be4240b77e">
+        <type>component.commerce_assets.faqitem</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "text_faq_title" : "My FAQ",
+  "text_faq_answer" : "&lt;h4&gt;&lt;strong&gt;Answer 1&lt;/strong&gt;&lt;/h4&gt;",
+  "disable_faq_item" : false,
+  "disable_faq_title" : false,
+  "text_faq_question" : "Question 1"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
     <content content-id="eb3ba0039c140b78f32810d7b1">
         <display-name xml:lang="x-default">1 Row x 1 Col (Mobile), 1 Row x 1 Col (Desktop) Component</display-name>
         <type>component.commerce_layouts.mobileGrid1r1c</type>
@@ -5595,6 +5683,18 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
 &lt;p style="font-weight:bold;"&gt;如果您无法找到想要找的内容，何不让我们训练有素的员工给您推荐？&lt;/p&gt;&#13;
 &lt;p&gt;我们的客户服务代表可提供帮助。 &lt;a href="$httpsUrl(CustomerService-ContactUs)$"&gt;给我们发电子邮件&lt;/a&gt; 或致电 800-555-0199。&lt;/p&gt;&#13;
 &lt;/div&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
+    <content content-id="exercicio3-frontend">
+        <display-name xml:lang="x-default">Exercicio 3 Frontend</display-name>
+        <description xml:lang="x-default">Contido creado para o exercicio 3 de frontend</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="DesktopBannerImage">163871.jpg</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h2&gt;&lt;strong&gt;&lt;span style="font-family:Arial,Helvetica,sans-serif;"&gt;&lt;/span&gt;&lt;/strong&gt;Exercicio3-Frontend&lt;/h2&gt;</custom-attribute>
         </custom-attributes>
     </content>
 
@@ -6159,8 +6259,8 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
                 &lt;li&gt;&lt;a href="$url('Page-Show', 'cid', 'privacy-policy')$" title="Go to Privacy"&gt;Privacy&lt;/a&gt;&lt;/li&gt;&#13;
                 &lt;li&gt;&lt;a href="$url('Page-Show', 'cid', 'terms')$" title="Go to Terms"&gt;Terms&lt;/a&gt;&lt;/li&gt;&#13;
                 &lt;li&gt;&lt;a href="$url('Page-Show', 'cid', 'jobs-landing')$" title="Go to Jobs"&gt;Jobs&lt;/a&gt;&lt;/li&gt;&#13;
-                &lt;/ul&gt;&lt;!-- END: footer_about --&gt;
-				</custom-attribute>
+                &lt;li&gt;FOUND IT&lt;/li&gt;&#13;
+                &lt;/ul&gt;&lt;!-- END: footer_about --&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;div&gt;&lt;button class="title btn text-left btn-block d-sm-none" aria-expanded="false" aria-controls="collapsible-customer-service"&gt;À propos&lt;/button&gt;&lt;h2 class="title d-none d-sm-block"&gt;À propos&lt;/h2&gt;&lt;/div&gt;&#13;
                 &lt;ul id="collapsible-about"class="menu-footer content"&gt;&#13;
                 &lt;li&gt;&lt;a href="$url('Page-Show', 'cid', 'about-us')$" title="Aller à À propos de nous"&gt;À propos de nous&lt;/a&gt;&lt;/li&gt;&#13;
@@ -6205,11 +6305,12 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
             <custom-attribute attribute-id="body" xml:lang="x-default">&lt;div&gt;&lt;button class="title btn text-left btn-block d-sm-none" aria-expanded="false" aria-controls="collapsible-account"&gt;Account&lt;/button&gt;&lt;h2 class="title d-none d-sm-block"&gt;Account&lt;/h2&gt;&lt;/div&gt;&#13;
                 &lt;ul id="collapsible-account"class="menu-footer content"&gt;&#13;
                 &lt;li&gt;&lt;a href="$httpsURL('Account-Show')$" title="Go to My Account"&gt;My Account&lt;/a&gt;&lt;/li&gt;&#13;
+                &lt;li&gt;&lt;a href="$httpsURL('EditPreferences-Start')$" title="Go to My Preferences"&gt;My Preferences&lt;/a&gt;&lt;/li&gt;&#13;
                 &lt;li&gt;&lt;a href="$httpsURL('Order-History')$" title="Go to Check Order"&gt;Check Order&lt;/a&gt;&lt;/li&gt;&#13;
                 &lt;!-- &lt;li&gt;&lt;a href="$httpsURL('Wishlist-Search')$" title="Go to Wishlist"&gt;Find a Wishlist&lt;/a&gt;&lt;/li&gt; --&gt;&#13;
                 &lt;!-- &lt;li&gt;&lt;a href="$httpsURL('GiftRegistry-Landing')$" title="Go to Gift Registry"&gt;Gift Registry&lt;/a&gt;&lt;/li&gt; --&gt;&#13;
-                &lt;/ul&gt;&lt;!-- END: footer-account --&gt;
-				</custom-attribute>
+                &lt;li&gt;FOUND IT&lt;/li&gt;&#13;
+                &lt;/ul&gt;&lt;!-- END: footer-account --&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;div&gt;&lt;button class="title btn text-left btn-block d-sm-none" aria-expanded="false" aria-controls="collapsible-account"&gt;Compte&lt;/button&gt;&lt;h2 class="title d-none d-sm-block"&gt;Compte&lt;/h2&gt;&lt;/div&gt;&#13;
                 &lt;ul id="collapsible-account"class="menu-footer content"&gt;&#13;
                 &lt;li&gt;&lt;a href="$httpsURL('Account-Show')$" title="Aller à Mon compte"&gt;Mon compte&lt;/a&gt;&lt;/li&gt;&#13;
@@ -6253,19 +6354,19 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
         <custom-attributes>
             <custom-attribute attribute-id="body" xml:lang="x-default">&lt;div class="copyright"&gt;&amp;copy; 2004-2019 Salesforce. All Rights Reserved.&lt;/div&gt;&#13;
                 &lt;div class="postscript"&gt;This is a demo store only. Orders made will NOT be processed.&lt;/div&gt;&#13;
-		&lt;!-- SFRA 4.4.0 --&gt;</custom-attribute>
+		&lt;!-- SFRA 5.3.0 --&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;div class="copyright"&gt;© 2004-2019 Salesforce. Tous droits réservés.&lt;/div&gt;&#13;
                 &lt;div class="postscript"&gt;Ceci est une boutique de démonstration uniquement. Les commandes NE SERONT PAS traitées.&lt;/div&gt;&#13;
-		&lt;!-- SFRA 4.4.0 --&gt;</custom-attribute>
+		&lt;!-- SFRA 5.3.0 --&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="it-IT">&lt;div class="copyright"&gt;© 2004-2019 Salesforce. Tutti i diritti riservati.&lt;/div&gt;&#13;
                 &lt;div class="postscript"&gt;Questo è un negozio fittizio a scopo dimostrativo. Gli ordini effettuati NON verranno evasi.&lt;/div&gt;&#13;
-		&lt;!-- SFRA 4.4.0 --&gt;</custom-attribute>
+		&lt;!-- SFRA 5.3.0 --&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="ja-JP">&lt;div class="copyright"&gt;© 2004-2019 Salesforce. All Rights Reserved.&lt;/div&gt;&#13;
                 &lt;div class="postscript"&gt;これはデモのみを目的とするストアです。注文を確定しても処理されません。&lt;/div&gt;&#13;
-		&lt;!-- SFRA 4.4.0 --&gt;</custom-attribute>
+		&lt;!-- SFRA 5.3.0 --&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="zh-CN">&lt;div class="copyright"&gt;© 2004-2019 Salesforce。保留所有权利。&lt;/div&gt;&#13;
                 &lt;div class="postscript"&gt;此仅为示范商店。所下订单不会被处理。&lt;/div&gt;&#13;
-		&lt;!-- SFRA 4.4.0 --&gt;</custom-attribute>
+		&lt;!-- SFRA 5.3.0 --&gt;</custom-attribute>
         </custom-attributes>
     </content>
 
@@ -6280,7 +6381,8 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
         <page-attributes/>
         <custom-attributes>
             <custom-attribute attribute-id="body" xml:lang="x-default">&lt;a href="$httpsURL('Stores-Find', 'showMap', true, 'horizontalView', true, 'isForm', true)$" class="menu-footer locate-store"&gt;&lt;h2&gt;Locate Store&lt;/h2&gt;&lt;/a&gt;&#13;
-                &lt;span class="content"&gt;The Store Locator is designed to help you find the closest store near you.&lt;/span&gt;</custom-attribute>
+                &lt;span class="content"&gt;The Store Locator is designed to help you find the closest store near you.&lt;/span&gt;&#13;
+&lt;br/&gt; FOUND IT &lt;br/&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;a href="$httpsURL('Stores-Find', 'showMap', true, 'horizontalView', true, 'isForm', true)$" class="menu-footer locate-store"&gt;&lt;h2&gt;Localiser des magasins&lt;/h2&gt;&lt;/a&gt;&#13;
                 &lt;span class="content"&gt;Le localisateur de magasins vous aide à trouver le magasin le plus proche.&lt;/span&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="it-IT">&lt;a href="$httpsURL('Stores-Find', 'showMap', true, 'horizontalView', true, 'isForm', true)$" class="menu-footer locate-store"&gt;&lt;h2&gt;Trova negozio&lt;/h2&gt;&lt;/a&gt;&#13;
@@ -6356,8 +6458,8 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
                 &lt;li&gt;&lt;a href="#" title="Go to Gift Certificates"&gt;Gift Certificates&lt;/a&gt;&lt;/li&gt;&#13;
                 &lt;li&gt;&lt;a href="#" title="Go to Help"&gt;Help&lt;/a&gt;&lt;/li&gt;&#13;
                 &lt;li&gt;&lt;a href="#" title="Go to Site Map"&gt;Site Map&lt;/a&gt;&lt;/li&gt;&#13;
-                &lt;/ul&gt;&lt;!-- END: footer_support --&gt;
-				</custom-attribute>
+                &lt;li&gt;FOUND IT&lt;/li&gt;&#13;
+                &lt;/ul&gt;&lt;!-- END: footer_support --&gt;</custom-attribute>
             <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;div&gt;&lt;button class="title btn text-left btn-block d-sm-none" aria-expanded="false" aria-controls="collapsible-customer-service"&gt;Service client&lt;/button&gt;&lt;h2 class="title d-none d-sm-block"&gt;Service client&lt;/h2&gt;&lt;/div&gt;&#13;
                 &lt;ul id="collapsible-customer-service"class="menu-footer content"&gt;&#13;
                 &lt;li&gt;&lt;a href="#" title="Aller à Contactez-nous"&gt;Contactez-nous&lt;/a&gt;&lt;/li&gt;&#13;
@@ -10837,6 +10939,30 @@ CityName, XX 00000 USA&lt;br /&gt;&#13;
         </folder-links>
     </content>
 
+    <content content-id="sale-page">
+        <display-name xml:lang="x-default">Sale Page</display-name>
+        <type>page.storePage</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <visibility-mode xml:lang="x-default">visible</visibility-mode>
+        <data xml:lang="x-default">{ }</data>
+        <online-flag>false</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <searchable-flag site-id="RefArch">false</searchable-flag>
+        <page-attributes/>
+        <content-links>
+            <content-link content-id="96b2c29c7066193006a0027f8c" type="page.storePage.main">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="44664ac984739d720dd3a10817" type="page.storePage.main">
+                <position>1.0</position>
+            </content-link>
+        </content-links>
+        <sitemap-included-flag site-id="RefArch">false</sitemap-included-flag>
+    </content>
+
     <content content-id="search-result-banner">
         <display-name xml:lang="x-default">Search Result Banner</display-name>
         <description xml:lang="x-default">Banner for search result page</description>
@@ -11294,16 +11420,14 @@ Consideriamo molto seriamente i diritti relativi alla privacy degli utenti di qu
     </content>
 
     <content content-id="student_guide_content_asset">
-        <display-name xml:lang="x-default">Student Guide Content Asset</display-name>
+        <display-name xml:lang="x-default">student guide content asset</display-name>
         <online-flag>true</online-flag>
         <searchable-flag>false</searchable-flag>
         <page-attributes/>
         <custom-attributes>
-            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;figure class="image"&gt;&lt;img alt="bolso rojo" height="50" src="HWSG7479070-RED.jfif?$staticlink$" title="bolso rojo" width="50" /&gt;&#13;
-&lt;figcaption&gt;Leyenda&lt;/figcaption&gt;&#13;
-&lt;/figure&gt;&#13;
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;La Ludwig del Bonham, nachi&amp;ntilde;ooo&lt;/p&gt;&#13;
 &#13;
-&lt;p&gt;This is my 1st content asset's body&lt;/p&gt;</custom-attribute>
+&lt;p&gt;&lt;img alt="" src="ludwig-vistalite-shellset-amber_1_DRU0035193-000.jpg?$staticlink$" title="" /&gt;&lt;/p&gt;</custom-attribute>
         </custom-attributes>
         <folder-links>
             <classification-link folder-id="student_guide_folder"/>
@@ -11311,22 +11435,14 @@ Consideriamo molto seriamente i diritti relativi alla privacy degli utenti di qu
     </content>
 
     <content content-id="student_guide_content_asset_2">
-        <display-name xml:lang="x-default">Second Content Asset</display-name>
+        <display-name xml:lang="x-default">student guide content asset 2</display-name>
         <online-flag>true</online-flag>
         <searchable-flag>false</searchable-flag>
         <page-attributes/>
         <custom-attributes>
-            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;Second content asset:&lt;/p&gt;&#13;
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;Esta es la Ludwig del Paice, nenooo&lt;/p&gt;&#13;
 &#13;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
-&#13;
-&lt;p&gt;&lt;img alt="" height="300" src="32011-animator-collection-page_mb.jpg?$staticlink$" title="" width="300" /&gt;&lt;/p&gt;&#13;
-&#13;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
-&#13;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
-&#13;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;</custom-attribute>
+&lt;p&gt;&lt;img alt="" src="ludwig%20silver%20sparkle.JPG?$staticlink$" title="" /&gt;&lt;/p&gt;</custom-attribute>
         </custom-attributes>
         <folder-links>
             <classification-link folder-id="student_guide_folder"/>
