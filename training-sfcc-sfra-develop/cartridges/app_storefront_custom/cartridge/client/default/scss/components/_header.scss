@@ -8,6 +8,28 @@ $menu-item-margin: 0.625em;
     position: relative;
 }
 
+.header-container-parent {
+    display:flex; 
+    align-content: center; 
+    background-color:white
+}
+
+.header-fixed {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.row-header-banner-promo {
+    display:flex;
+    align-content: center;
+    background-color: beige;
+}
+
+.row-header-banner-promo-content-asset {
+   margin: 0 auto;
+}
+
 .navbar-header {
     height: 4.375em; /* 70/16 */
 
