@@ -10769,6 +10769,17 @@ CityName, XX 00000 USA&lt;br /&gt;&#13;
         </folder-links>
     </content>
 
+    <content content-id="promo-banner">
+        <display-name xml:lang="x-default">Promo Banner</display-name>
+        <description xml:lang="x-default">Little promo banner below the navigation menu header</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h4&gt;&lt;strong&gt;&lt;span style="font-family:Arial,Helvetica,sans-serif;"&gt;&lt;/span&gt; &lt;/strong&gt;Free Shipping over US$ 50.00&lt;/h4&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
     <content content-id="returns">
         <display-name xml:lang="x-default">Information About Returns</display-name>
         <display-name xml:lang="fr-FR">Informations sur les retours</display-name>
