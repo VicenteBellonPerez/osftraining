@@ -7,6 +7,9 @@
 
     <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
     <div class="home-main homepage">
+        <iscomment>
+            Added new isml exercise4 which is associated to the content asset developed in exercise 3    
+        </iscomment>
         <div class="banner-body-exercise4-parent">
             <div class="banner-body-exercise4-children">
                 <isinclude template="exercise4"/> 

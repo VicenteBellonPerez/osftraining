@@ -61,6 +61,9 @@
         </div>
     </nav>
 </header>
+<iscomment>
+    Add new content asset with the new promo banner requested in exercise 4
+</iscomment>
 <div class="row-header-banner-promo">
     <div class="row-header-banner-promo-content-asset">
         <iscontentasset aid="promo-banner" />
