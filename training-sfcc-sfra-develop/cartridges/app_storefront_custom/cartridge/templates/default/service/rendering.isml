@@ -1,0 +1,27 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+<div class="rowExercise6Header">
+    <div class="rowExercise6Header1">
+        <h3><isprint value="${Resource.msg('exercise6.header1','exercise6',null)}" encoding="on" /></h3>
+    </div>
+    <div class="rowExercise6Header2">
+        <isprint value="${Resource.msg('exercise6.header2','exercise6',null)}" encoding="on" />
+    </div>
+</div>
+<div class="rowExercise6">
+    <div class="containerExercise6">
+        <div class="footer-container row exercise6Margin">
+            <div class="footer-item col-sm-3 store">
+                <iscontentasset aid="exercise6" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="exercise6" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="exercise6" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="exercise6" />
+            </div>
+        </div>
+    </div>
+</div>
