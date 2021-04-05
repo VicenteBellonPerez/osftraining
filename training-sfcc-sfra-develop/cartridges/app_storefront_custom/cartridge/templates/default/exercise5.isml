@@ -90,7 +90,7 @@
                 </label>
                 <input type="text" class="form-control" id="zipCode"
                     <isprint value="${pdict.form.postalCode.attributes}" encoding="off" />
-                    autocomplete="postal-code" data-missing-error="${Resource.msg('error.message.required','forms',null)}"/>
+                    autocomplete="postal-code" data-missing-error="${Resource.msg('error.message.required','forms',null)}" data-pattern-mismatch="${Resource.msg('exercise5.zipcode.invalidValue','forms',null)}"/>
                 <div class="invalid-feedback"></div>
             </div>
         </div>
