@@ -1,0 +1,26 @@
+<isdecorate template="common/layout/page">
+<iscomment>
+<div class="container">
+    <div class="row justify-content-center">    
+</iscomment>
+        <div class="exercise7-slide-main">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>        
+        </div>
+        <div class="exercise7-slide-nav">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>    
+<iscomment>
+</div>    
+</div>    
+</iscomment>    
+</isdecorate>

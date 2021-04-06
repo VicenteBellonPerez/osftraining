@@ -53,9 +53,11 @@
     "css-vars-ponyfill": "^2.1.2",
     "flag-icon-css": "^2.9.0",
     "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
     "isml-linter": "^5.22.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.6.0",
     "popper.js": "^1.14.6",
+    "slick-carousel": "^1.8.1",
     "xzoom": "^1.0.14"
   }
 }
