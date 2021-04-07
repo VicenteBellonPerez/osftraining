@@ -5598,6 +5598,35 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
         </custom-attributes>
     </content>
 
+    <content content-id="exercise7">
+        <display-name xml:lang="x-default">exercise7</display-name>
+        <description xml:lang="x-default">CA that contains a carousel of images</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;div class="exercise7-slide-main" data-slick="{&amp;quot;slidesToShow&amp;quot;: 1,&amp;quot;slidesToScroll&amp;quot;: 1,&amp;quot;asNavFor&amp;quot;: &amp;quot;.exercise7-slide-nav&amp;quot;, &amp;quot;centerMode&amp;quot;: true, &amp;quot;centerPadding&amp;quot;: &amp;quot;250px&amp;quot;, &amp;quot;infinite&amp;quot;: false,&amp;quot;fade&amp;quot;: true}"&gt;&#13;
+&lt;div&gt;&lt;img alt="ludwig1" height="150" src="163871.jpg?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&#13;
+&lt;div&gt;&lt;img alt="ludwig2" height="150" src="ludwig%20silver%20sparkle.JPG?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&#13;
+&lt;div&gt;&lt;img alt="ludwig3" height="150" src="ludwig-vistalite-shellset-amber_1_DRU0035193-000.jpg?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&#13;
+&lt;div&gt;&lt;img alt="ludwig4" height="150" src="ludwig4.jpg?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&lt;/div&gt;&#13;
+&#13;
+&lt;div class="exercise7-slide-nav"&gt;&#13;
+&lt;div&gt;&lt;img alt="ludwig1" height="150" src="163871.jpg?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&#13;
+&lt;div&gt;&lt;img alt="ludwig2" height="150" src="ludwig%20silver%20sparkle.JPG?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&#13;
+&lt;div&gt;&lt;img alt="ludwig3" height="150" src="ludwig-vistalite-shellset-amber_1_DRU0035193-000.jpg?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&#13;
+&lt;div&gt;&lt;img alt="ludwig4" height="150" src="ludwig4.jpg?$staticlink$" title="" widht="150" /&gt;&lt;/div&gt;&#13;
+&lt;/div&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
     <content content-id="f21da510024de04a5980bdfb72">
         <display-name xml:lang="x-default">Campaign Banner Component</display-name>
         <type>component.commerce_assets.campaignBanner</type>
