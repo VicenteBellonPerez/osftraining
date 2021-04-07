@@ -1,0 +1,5 @@
+<isdecorate template="common/layout/page">
+
+<isslot id="exercise8-banner" description="exercise8Slot" context="global"/>
+
+</isdecorate>

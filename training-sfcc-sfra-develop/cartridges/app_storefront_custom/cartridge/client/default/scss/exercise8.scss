@@ -1,0 +1,13 @@
+.slick-prev:before, .slick-next:before {	
+    color: black;	
+}	
+
+.slick-slide.slick-current.slick-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise8-slide {
+    margin: auto 150px auto 150px;
+}
