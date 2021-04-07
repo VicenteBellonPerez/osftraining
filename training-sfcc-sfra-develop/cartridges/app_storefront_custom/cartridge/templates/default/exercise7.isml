@@ -1,26 +1,20 @@
 <isdecorate template="common/layout/page">
-<iscomment>
-<div class="container">
-    <div class="row justify-content-center">    
-</iscomment>
-        <div class="exercise7-slide-main">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>        
+
+<isinclude template="/components/modules" sf-toolkit="off" />
+    <iscontentasset aid="exercise7" />
+        
+<iscomment>        
+        <div class="exercise7-slide-main" data-slick='{"slidesToShow": 1,"slidesToScroll": 1,"fade": true,"asNavFor": ".exercise7-slide-nav", "centerMode": true, "centerPadding": "250px"}'>
+            <div><img src="${URLUtils.staticURL('/images/ludwig1.jpg')}" height="150" widht="150" alt="ludwig1"/></div>
+            <div><img src="${URLUtils.staticURL('/images/ludwig2.JPG')}" height="150" widht="150" alt="ludwig2"/></div>
+            <div><img src="${URLUtils.staticURL('/images/ludwig3.jpg')}" height="150" widht="150" alt="ludwig3"/></div>
+            <div><img src="${URLUtils.staticURL('/images/ludwig4.jpg')}" height="150" widht="150" alt="ludwig4"/></div>
         </div>
         <div class="exercise7-slide-nav">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+            <div><img src="${URLUtils.staticURL('/images/ludwig1.jpg')}" height="150" widht="150" alt="ludwig1"/></div>
+            <div><img src="${URLUtils.staticURL('/images/ludwig2.JPG')}" height="150" widht="150" alt="ludwig2"/></div>
+            <div><img src="${URLUtils.staticURL('/images/ludwig3.jpg')}" height="150" widht="150" alt="ludwig3"/></div>
+            <div><img src="${URLUtils.staticURL('/images/ludwig4.jpg')}" height="150" widht="150" alt="ludwig4"/></div>
         </div>    
-<iscomment>
-</div>    
-</div>    
 </iscomment>    
 </isdecorate>
