@@ -3,18 +3,5 @@
         <div class="col-6 col-sm-4">
             <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.ID, 'pview', 'tile', 'ratings', true, 'swatches', true)}"/>
         </div>
-<iscomment>
-        <div>
-            <isif condition="${product.getImages('medium')}">
-                <isloop items="${product.getImages('medium')}" var="image" status="imageState">
-                    <isif condition="${imageState.first}">
-                        <img src="${image.absURL.toString()}" alt="${image.alt}"/>
-                    <iselse/>    
-                    </isif>
-                </isloop>
-            <iselse/>
-            </isif>
-        </div>    
-</iscomment>
     </isloop>
     </div>
