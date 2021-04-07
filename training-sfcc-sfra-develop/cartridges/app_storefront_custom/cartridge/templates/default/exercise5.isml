@@ -1,0 +1,218 @@
+<isdecorate template="common/layout/page">
+
+<iscomment><link rel="stylesheet" href="${URLUtils.staticURL('/css/exercise5/exercise5.css')}" /></iscomment>
+
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addJs('/js/exercise5.js');
+    assets.addCss('/css/exercise5/exercise5.css');
+</isscript>
+<div class="headerExercise5">${Resource.msg('exercise5.header','exercise5',null)}</div>
+<form action="${URLUtils.url('Exercise5-Process')}" class="exercise5-form" method="POST">
+
+    <!-- Address 1 -->
+    <div class="form-group ${pdict.form.address1.mandatory === true ? 'required' : ''}">
+        <label class="form-control-label" for="address1">
+            <isprint value="${pdict.form.address1.label}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="address1"
+            <isprint value="${pdict.form.address1.attributes}" encoding="off" /> autocomplete="address-line1" data-missing-error="${Resource.msg('error.message.required','forms',null)}"/>
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <!-- Address 2 -->
+    <div class="form-group ${pdict.form.address2.mandatory === true ? 'required' : ''}">
+        <label class="form-control-label" for="address2">
+            <isprint value="${pdict.form.address2.label}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="address2"
+            <isprint value="${pdict.form.address2.attributes}" encoding="off" />
+            autocomplete="billing address-line2"/>
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <!-- Country and State drop downs -->
+    <div class="row">
+        <!-- Country  -->
+        <div class="col-6">
+            <div class="form-group ${pdict.form.country.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="country">
+                    <isprint value="${pdict.form.country.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="country"
+                    <isprint value="${pdict.form.country.attributes}" encoding="off" />
+                    autocomplete="country" data-missing-error="${Resource.msg('error.message.required','forms',null)}">
+                    <isloop items=${pdict.form.country.options} var="country">
+                        <option id="${country.id}" value="${country.htmlValue}" <isif condition="${country.selected}">selected</isif>>${country.label}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <!-- State  -->
+        <div class="col-6">
+            <div class="form-group ${pdict.form.stateCode.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="state">
+                    <isprint value="${pdict.form.stateCode.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="state" <isprint value="${pdict.form.stateCode.attributes}" encoding="off" /> autocomplete="address-level1" data-missing-error="${Resource.msg('error.message.required','forms',null)}">
+                    <iscomment>
+                        <isloop items=${pdict.form.states.stateCode.options} var="state">
+                            <option id="${state.id}" value="${state.htmlValue}" <isif condition="${state.selected}">selected</isif>>${state.label || ' '}</option>
+                        </isloop>                        
+                    </iscomment>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group ${pdict.form.city.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="city">
+                    <isprint value="${pdict.form.city.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="city"
+                    <isprint value="${pdict.form.city.attributes}" encoding="off" />
+                    autocomplete="address-level2" data-missing-error="${Resource.msg('error.message.required','forms',null)}"/>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        
+        <div class="col-6">
+            <div class="form-group ${pdict.form.postalCode.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="zipCode">
+                    <isprint value="${pdict.form.postalCode.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="zipCode"
+                    <isprint value="${pdict.form.postalCode.attributes}" encoding="off" />
+                    autocomplete="postal-code" data-missing-error="${Resource.msg('error.message.required','forms',null)}" data-pattern-mismatch="${Resource.msg('exercise5.zipcode.invalidValue','forms',null)}"/>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="form-group ${pdict.form.phone.mandatory === true ? 'required' : ''}">
+        <label class="form-control-label" for="phone">
+            <isprint value="${pdict.form.phone.label}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="phone"
+            <isprint value="${pdict.form.phone.attributes}" encoding="off" />
+            autocomplete="tel" data-missing-error="${Resource.msg('error.message.required','forms',null)}"/>
+        <div class="invalid-feedback"></div>
+    </div>
+
+
+    <div class="form-group ${pdict.form.comment.mandatory === true ? 'required' : ''}">
+        <label class="form-control-label" for="comment">
+            <isprint value="${pdict.form.comment.label}" encoding="htmlcontent" />
+        </label>
+        <label class="exercise5CharCount">${Resource.msg('exercise5.commentlength','exercise5',null)}</label><span id="remainChars">150</span>
+        <textarea class="form-control" id="comment" <isprint value="${pdict.form.comment.attributes}" encoding="off"/> rows="3"></textarea>
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <iscomment>Card Number</iscomment> 
+    <div class="row">
+        <div class="col">
+            <div class="form-group ${pdict.form.cardNumber.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="cardNumber">
+                    <isprint value="${pdict.form.cardNumber.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="cardNumber" <isprint value="${pdict.form.cardNumber.attributes}" encoding="off" /> data-missing-error="${Resource.msg('error.message.required','forms',null)}" aria-describedby="form-cardNumber-error"/>
+                <div class="invalid-feedback" id="form-cardNumber-error"></div>        
+            </div>
+        </div>
+    </div>
+
+    <iscomment> Expiration Card Month&Year</iscomment>        
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group ${pdict.form.expirationMonth.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="expirationMonth">
+                    <isprint value="${pdict.form.expirationMonth.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control custom-select" id="expirationMonth" <isprint value="${pdict.form.expirationMonth.attributes}" encoding="off" /> autocomplete="cc-exp-month" 0 data-missing-error="${Resource.msg('error.message.required','forms',null)}">
+                    <isloop items=${pdict.form.expirationMonth.options} var="month">
+                        <option id="${month.id}" value="${month.htmlValue}" <isif condition="${month.selected}">selected</isif> >${month.label}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="form-group ${pdict.form.expirationYear.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="expirationYear">
+                    <isprint value="${pdict.form.expirationYear.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control custom-select" id="expirationYear" <isprint value="${pdict.form.expirationYear.attributes}" encoding="off" /> autocomplete="cc-exp-year" data-missing-error="${Resource.msg('error.message.required','forms',null)}">
+                    <iscomment>
+                        <option value="${pdict.form.expirationYear.options[0].htmlValue}">${pdict.form.expirationYear.options[0].label}</option>
+                    </iscomment>
+                    <isloop items=${pdict.form.expirationYear.options} var="year">
+                        <option id="${year.id}" value="${year.htmlValue}" <isif condition="${year == pdict.form.expirationYear.value}">selected</isif> >${year.label}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <iscomment>Security code & Email</iscomment>        
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group ${pdict.form.securityCode.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="securityCode">
+                    <isprint value="${pdict.form.securityCode.label}" encoding="htmlcontent" />
+                </label>
+                <i class="fa fa-info-circle blue-color" id="infoSecurity"></i>
+                <div id="infoSecurityText" class="infoSecurityText"></div>
+                <input type="text" class="form-control" id="securityCode" <isprint value="${pdict.form.securityCode.attributes}" encoding="off" /> data-missing-error="${Resource.msg('error.message.required','forms',null)}"/>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="form-group ${pdict.form.email.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="email">
+                    <isprint value="${pdict.form.email.label}" encoding="htmlcontent" />
+                </label>
+                <i class="fa fa-info-circle blue-color" id="infoEmail"></i>
+                <div id="infoEmailText" class="infoEmailText"></div>
+                <input type="text" class="form-control" id="email" <isprint value="${pdict.form.email.attributes}" encoding="off" /> data-missing-error="${Resource.msg('error.message.required','forms',null)}" data-pattern-mismatch="${Resource.msg('error.email.invalidValue','forms',null)}"/>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <iscomment>Save card</iscomment> 
+    <div class="make-default-payment">
+        <div class="form-group custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="saveCard" name="saveCard" checked="${pdict.form.saveCard.checked}">
+            <label class="custom-control-label" for="saveCard">
+                <isprint value="${pdict.form.saveCard.label}" encoding="htmlcontent" />
+            </label>
+        </div>
+    </div>
+
+    <iscomment>Save and Go up to the page Buttons</iscomment> 
+    <div class="row">
+        <div class="col">
+            <button type="submit" name="save" class="btn btn-save btn-block btn-primary">${Resource.msg('button.save','forms',null)}</button>
+        </div>
+        <button class="back-to-top-exercise5" title="${Resource.msg('button.back_to_top', 'common', null)}" aria-label="${Resource.msg('button.back_to_top', 'common', null)}">
+            <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                <i class="fa fa-arrow-up fa-stack-1x"></i>
+            </span>
+        </button>
+    </div>
+
+</form>
+</isdecorate>

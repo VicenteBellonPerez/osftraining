@@ -1,0 +1,44 @@
+.form-control-label {
+  .exercise5 {
+    margin: 0px 20px;
+  }
+}
+
+.headerExercise5{
+  width: 100%;
+  background-color: #edfdfd;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+
+.fa-info-circle {
+  font-size: 15px;
+  color: #267586;
+}
+
+.back-to-top {
+  border: none;
+}
+
+.exercise5-form {
+  margin: 0 50px 0 30px;
+}
+
+.infoSecurityText, .infoEmailText{
+  position: relative;
+}
+
+#infoSecurityTextP, #infoEmailTextP, .exercise5CharCount {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: smaller;
+  font-style: italic;
+}
+
+#remainChars {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: smaller;
+  font-weight: bold;
+  color:rgb(228, 135, 135);
+}
