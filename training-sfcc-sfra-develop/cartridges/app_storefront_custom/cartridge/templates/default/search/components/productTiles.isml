@@ -1,0 +1,16 @@
+<isif condition="${pdict.productSearch.productSearch.category.custom.badgeText}">
+    <isset name="categoryBadgeText" value="${pdict.productSearch.productSearch.category.custom.badgeText}" scope="page" />    
+    <isset name="categoryBadgeFontColor" value="${pdict.productSearch.productSearch.category.custom.badgeTextColor}" scope="page" />
+    <isset name="categoryBadgeBackgroundColor" value="${pdict.productSearch.productSearch.category.custom.badgeBackgroundColor}" scope="page" />
+<iselse/>
+</isif>    
+<isloop items="${pdict.productSearch.productIds}" var="product">
+    <div class="col-6 col-sm-4">
+        <div class="categoryBadge" style="background-color:<isprint value="${categoryBadgeBackgroundColor}" encoding="htmlcontent"/>; color:<isprint value="${categoryBadgeFontColor}" encoding="htmlcontent"/>">
+            <isprint value="${categoryBadgeText}" encoding="on" />
+        </div>
+        <isobject object="${product.productSearchHit}" view="searchhit">
+            <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.productID, 'swatches', true, 'ratings', true)}" />
+        </isobject>
+    </div>
+</isloop>
