@@ -1,0 +1,17 @@
+<div class="rowExercise10">    
+    <div class="containerExercise10">
+        <div class="footer-container row exercise10Margin">
+            <div class="footer-item col-sm-4 store exercise10Footer3Item">
+                <div class="exercise10MainHeader"><isprint value="${Resource.msg('exercise10.header3-1','exercise10',null)}" encoding="on" /></div>
+                <iscontentasset aid="exercise10FooterAbout" />
+                <iscontentasset aid="exercise10FooterAccount" />
+            </div>
+            <div class="footer-item col-sm-4 store exercise10Footer3Item">
+                <iscontentasset aid="exercise10FooterHotline" />
+            </div>
+            <div class="footer-item col-sm-4 store exercise10Footer3Item">
+                <iscontentasset aid="exercise10FooterHelp" />
+            </div>
+        </div>
+    </div>
+</div>

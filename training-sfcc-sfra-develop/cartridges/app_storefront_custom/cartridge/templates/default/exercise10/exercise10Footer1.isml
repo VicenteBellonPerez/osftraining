@@ -1,0 +1,26 @@
+<div class="rowExercise10Header">
+    <div class="rowExercise10Header1">
+        <h3><isprint value="${Resource.msg('exercise10.header1','exercise10',null)}" encoding="on" /></h3>
+    </div>
+    <div class="rowExercise10Header2">
+        <isprint value="${Resource.msg('exercise10.header2','exercise10',null)}" encoding="on" />
+    </div>
+</div>
+<div class="rowExercise10">
+    <div class="containerExercise10">
+        <div class="footer-container row exercise10Margin">
+            <div class="footer-item col-sm-3 store">
+                <iscontentasset aid="exercise6" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="exercise6" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="exercise6" />
+            </div>
+            <div class="footer-item col-sm-3 collapsible-xs">
+                <iscontentasset aid="exercise6" />
+            </div>
+        </div>
+    </div>
+</div>
