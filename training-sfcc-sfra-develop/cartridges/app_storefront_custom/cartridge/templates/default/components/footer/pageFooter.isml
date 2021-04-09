@@ -1,0 +1,8 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+<footer id="footercontent">
+    <isinclude template="exercise10/exercise10Footer1" sf-toolkit="on" />
+    <isinclude template="exercise10/exercise10Footer2" sf-toolkit="on" />
+    <isinclude template="exercise10/exercise10Footer3" sf-toolkit="on" />
+    <isinclude template="exercise10/exercise10Footer4" sf-toolkit="on" />
+    <isinclude template="exercise10/exercise10Footer5" sf-toolkit="on" />
+</footer>
