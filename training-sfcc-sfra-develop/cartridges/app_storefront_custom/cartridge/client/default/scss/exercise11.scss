@@ -1,0 +1,90 @@
+.loginPage {
+    display: flex;
+    height: 100vh;
+}
+
+.exercise11slot {
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.exercise11Label:hover {
+    cursor: pointer;
+}
+
+.exercise11SlotText {
+    color: #ffed16;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    font-weight: 700;
+}
+
+#exercise11InputLogin, #exercise11InputOrder {
+    display: none;
+}
+
+.exercise11LabelDiv {
+    position: relative;
+    height: 20vh;
+    margin-bottom:10px;
+}
+
+.exercise11LabelLogin, .exercise11LabelOrder {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #ffed16;
+    font-weight: 700;
+    filter: grayscale(100%);
+}
+
+.exercise11LabelImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#exercise11InputLogin:checked  ~ * .exercise11LabelLogin {
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: thick;
+    filter: grayscale(0%);
+}
+
+#exercise11InputOrder:checked ~ * .exercise11LabelOrder {
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: thick;
+    filter: grayscale(0%);
+}
+
+.exercise11LoginForm, .exercise11OrderForm {
+    //transition: all 0.5s;
+    transition-property: visibility;
+    transition-duration: .1s;
+    transition-delay: 0;
+    transition-timing-function: linear;
+    padding: 0 1em;
+    max-height: 0;
+    visibility: hidden;
+    position: relative;
+}
+
+.exercise11LoginForm, .exercise11OrderForm {
+    width: 100%;
+}
+
+#exercise11InputLogin:checked {
+    ~ * .exercise11LoginForm {
+        max-height: 100vh;
+        visibility: visible;    
+    }
+}
+
+#exercise11InputOrder:checked {
+    ~ * .exercise11OrderForm {
+        max-height: 100vh;
+        visibility: visible;    
+    }
+} 

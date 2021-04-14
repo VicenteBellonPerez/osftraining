@@ -1,0 +1,10 @@
+<isif condition="${slotcontent != null}">
+	<isloop items="${slotcontent.content}" var="contentAsset">
+		<div class="exercise11LabelDiv">
+			<label class="${contentAsset.custom.loginPageLabel}" for="${contentAsset.custom.loginPageInputType}">
+			 	<img src="${contentAsset.custom.loginPageImage.absURL}" alt="" title="" class="exercise11LabelImg"/>
+			 </label>
+			<div class="exercise11SlotText">${contentAsset.custom.loginPageText}</div>
+		</div>
+	</isloop>
+</isif>	

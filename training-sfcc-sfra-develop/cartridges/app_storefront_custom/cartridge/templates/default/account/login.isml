@@ -1,0 +1,54 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/login.css');
+        assets.addJs('/js/login.js');
+    </isscript>
+
+    <div class="hero slant-down login-banner">
+        <h1 class="page-title">${Resource.msg('header.hero.image.login', 'login', null)}</h1>
+    </div>
+    <div class="container login-page">
+        <input checked="checked" id="exercise11InputLogin" name="exercise11Input" type="radio" />
+        <input id="exercise11InputOrder" name="exercise11Input" type="radio" />
+        <div class="row exercise11Buttons">
+            <div class="col-sm-8 col-md-6">
+                <div class="html-slot-container exercise11slot">
+                    <isslot id="exercise11SlotLogin" context="global" description="View login form" context-object="" preview-url="" />
+                </div>                  
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <div class="html-slot-container exercise11slot">                   
+                    <isslot id="exercise11SlotOrder" context="global" description="View order form" context-object="" preview-url="" />
+                </div>
+            </div>
+        </div>
+        <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
+        <div class="row">
+            <div class="exercise11LoginForm">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="login-form-nav">
+                            <isinclude template="account/components/navTabs" />
+                            <div class="tab-content">
+                                <div class="tab-pane ${pdict.navTabValue === 'login' ? 'active' : ''}" id="login" role="tabpanel" aria-labelledby="login-tab">
+                                    <isinclude template="account/components/loginForm" />
+                                    <isinclude template="account/password/requestPasswordResetModal"/>
+                                    <isinclude template="account/components/oauth" />
+                                </div>
+                                <div class="tab-pane ${pdict.navTabValue === "register" ? 'active' : ''}" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                    <isinclude template="account/components/registerForm" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>  
+            <div class="exercise11OrderForm">
+                <div class="card">
+                    <isinclude template="account/components/trackOrderForm" />
+                </div>
+            </div>                
+        </div>
+    </div>
+</isdecorate>
