@@ -45,17 +45,15 @@
 
     <slot-configuration slot-id="exercise11SlotLogin" context="global" configuration-id="Exercise11LoginSlot" assigned-to-site="true">
         <description>Link to show the login form</description>
-        <template>slots/html/htmlSlotLoginPage.isml</template>
+        <template>slots/content/contentAssetBodyExercise11.isml</template>
         <enabled-flag>true</enabled-flag>
         <content>
-            <html>
-                <body xml:lang="x-default">&lt;input checked="checked" id="exercise11InputLogin" name="exercise11Input" type="radio" /&gt;
-&lt;div class="exercise11LabelDiv"&gt;&lt;label class="exercise11Label" for="exercise11InputLogin" style="background-image:url('experiencia-salesforce-customer-360.jpg?$staticlink$')"&gt;&lt;/label&gt;
-&lt;div class="exercise11SlotText"&gt;Returned customers&lt;/div&gt;
-&lt;/div&gt;</body>
-            </html>
+            <content-assets>
+                <content-asset content-id="loginPageLoginForm"/>
+            </content-assets>
         </content>
     </slot-configuration>
+
 
     <slot-configuration slot-id="cart-banner-m" context="global" configuration-id="Global cart slot" assigned-to-site="true">
         <description>Global cart slot</description>
@@ -335,17 +333,12 @@ Here you will find answers to your questions about shopping at our online store,
 
     <slot-configuration slot-id="exercise11SlotOrder" context="global" configuration-id="exercise11OrderSlot" assigned-to-site="true">
         <description>Link to show the order form</description>
-        <template>slots/html/htmlSlotLoginPage.isml</template>
+        <template>slots/content/contentAssetBodyExercise11.isml</template>
         <enabled-flag>true</enabled-flag>
         <content>
-            <html>
-                <body xml:lang="x-default">&lt;input type="radio" id="exercise11InputOrder" name="exercise11Input"/&gt;
-&lt;div class="exercise11LabelDiv"&gt;&lt;label for="exercise11InputOrder" class="exercise11Label" style="background-image:url('Package-delivery.jpg?$staticlink$')"&gt; &lt;/label&gt;
-&lt;div class="exercise11SlotText"&gt;
-Check your orders
-&lt;/div&gt;
-&lt;/div&gt;</body>
-            </html>
+            <content-assets>
+                <content-asset content-id="loginPageOrderForm"/>
+            </content-assets>
         </content>
     </slot-configuration>
 

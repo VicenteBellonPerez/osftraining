@@ -8148,6 +8148,34 @@ The possibilities are endless, not to mention the extensive benefits package, tr
         </folder-links>
     </content>
 
+    <content content-id="loginPageLoginForm">
+        <display-name xml:lang="x-default">Login Page Login Form</display-name>
+        <description xml:lang="x-default">CA used for the link to the login form</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="loginPageImage">experiencia-salesforce-customer-360.jpg</custom-attribute>
+            <custom-attribute attribute-id="loginPageInputType">exercise11InputLogin</custom-attribute>
+            <custom-attribute attribute-id="loginPageLabel">exercise11LabelLogin</custom-attribute>
+            <custom-attribute attribute-id="loginPageText">Returned customers</custom-attribute>
+        </custom-attributes>
+    </content>
+
+    <content content-id="loginPageOrderForm">
+        <display-name xml:lang="x-default">Login Page Order Form</display-name>
+        <description xml:lang="x-default">CA used for the link to the order form</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="loginPageImage">Package-delivery.jpg</custom-attribute>
+            <custom-attribute attribute-id="loginPageInputType">exercise11InputOrder</custom-attribute>
+            <custom-attribute attribute-id="loginPageLabel">exercise11LabelOrder</custom-attribute>
+            <custom-attribute attribute-id="loginPageText">Check your order</custom-attribute>
+        </custom-attributes>
+    </content>
+
     <content content-id="managing-account">
         <display-name xml:lang="x-default">Managing Your Account</display-name>
         <display-name xml:lang="fr-FR">Gestion de votre compte</display-name>
