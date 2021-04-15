@@ -30,8 +30,13 @@ server.append('Show', function (req, res, next) {
     var productIterator = apiProductSearch.products;
     while (productIterator.hasNext() && index <= maxItems) {
         var p = productIterator.next();
-        productList.add1(p);
-        index++;
+        // Controlling that the product retrieved is not the same as the selected previously
+        // If the product selected is a variant type one, we must take the ID of the variant Master Product
+        var productSelectedID = product.variant ? product.masterProduct.ID : product.ID;
+        if (p.ID != productSelectedID) {
+            productList.add1(p);
+            index++;
+        }
     }
     viewData.productSearchCategory = productList;
     res.setViewData(viewData);
