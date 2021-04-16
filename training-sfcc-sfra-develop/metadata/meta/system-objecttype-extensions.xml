@@ -4556,6 +4556,13 @@
                 <externally-managed-flag>false</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
+            <attribute-definition attribute-id="basketImportLimit">
+                <display-name xml:lang="x-default">Basket Import Limit</display-name>
+                <description xml:lang="x-default">If the total amount of the basket exceeds the limit defined by this value, an alert must be shown in the cart page</description>
+                <type>double</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
             <attribute-definition attribute-id="checkTLS">
                 <display-name xml:lang="x-default">Check TLS</display-name>
                 <description xml:lang="x-default">When true, this causes a TLS check to take place based on whether or not a cookie ('dw_TLSWarning') has been set on the browser</description>

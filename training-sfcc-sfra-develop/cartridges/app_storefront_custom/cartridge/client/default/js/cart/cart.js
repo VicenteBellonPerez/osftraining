@@ -1,7 +1,7 @@
 'use strict';
 
-var base = require('../product/base');
-var focusHelper = require('../components/focus');
+var base = require('../../../../../../app_storefront_base/cartridge/client/default/js/product/base');
+var focusHelper = require('../../../../../../app_storefront_base/cartridge/client/default/js/components/focus');
 
 /**
  * appends params to a url
