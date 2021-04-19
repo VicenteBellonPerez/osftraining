@@ -9,6 +9,7 @@ server.append('AddProduct', function (req, res, next) {
     var cartHelper = require('*/cartridge/scripts/helpers/cartHelpers');
     var ProductMgr = require('dw/catalog/ProductMgr');
     var URLUtils = require('dw/web/URLUtils');
+    
     if (req.currentCustomer.profile) {
         // User logged
         var customerEmail =  req.currentCustomer.profile.email;
