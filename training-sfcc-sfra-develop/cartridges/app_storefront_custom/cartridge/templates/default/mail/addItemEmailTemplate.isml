@@ -1,0 +1,10 @@
+<body>
+
+    <h1>${Resource.msg('cart.email.add.item.header', 'cart', null)}</h1>
+    <p><img src="${pdict.productImage}" alt="${pdict.productName}"/></p>
+    <p>${Resource.msg('cart.email.add.item.product.name','cart',null)} ${pdict.productName}</p>   
+    <p>${Resource.msg('cart.email.add.item.product.description','cart',null)} ${pdict.productDescription}</p> 
+    <p>${Resource.msg('cart.email.add.item.product.price','cart',null)} ${pdict.productPrice}</p> 
+    <p>${Resource.msg('cart.email.add.item.product.quantity','cart',null)} ${pdict.productQuantity}</p> 
+
+</body>
