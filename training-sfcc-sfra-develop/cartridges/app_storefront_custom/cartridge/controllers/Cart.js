@@ -5,7 +5,6 @@ var server = require('server');
 server.extend(module.superModule);
 
 server.append('AddProduct', function (req, res, next) {
-
     var ProductMgr = require('dw/catalog/ProductMgr');
     var URLUtils = require('dw/web/URLUtils');
     var emailHelpers = require('*/cartridge/scripts/helpers/emailHelpers');
