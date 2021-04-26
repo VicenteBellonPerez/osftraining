@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+    <field formid="newsletterEmail" label="placeholdertext.form.emailsignup" type="string" mandatory="true" binding="newsletterEmail" regexp="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$"
+           max-length="100" missing-error="error.message.required" parse-error="error.message.parse.email.profile.form"/>
+
+    <field formid="newsletterFirstName" label="placeholdertext.form.firstnamesignup" type="string" mandatory="true" binding="newsletterFirstName"
+           max-length="100" missing-error="error.message.required"/>
+
+    <field formid="newsletterLastName" label="placeholdertext.form.lastnamesignup" type="string" mandatory="true" binding="newsletterLastName"
+           max-length="100" missing-error="error.message.required"/>
+
+</form>

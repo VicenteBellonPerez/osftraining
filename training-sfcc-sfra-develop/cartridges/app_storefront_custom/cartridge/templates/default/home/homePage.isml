@@ -1,0 +1,42 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/productTile.js');
+        assets.addCss('/css/homePage.css');
+    </isscript>
+
+    <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
+    <div class="home-main homepage">
+        <isslot id="home-main-m" description="Main home page slot." context="global" />
+    </div>
+
+    <div class="container home-categories homepage">
+        <div class="row home-main-categories no-gutters">
+            <isslot id="home-categories-m" description="Categories slots on the home page." context="global" />
+        </div>
+    </div>
+
+    <div class="container home-product-tiles homepage">
+        <div class="hp-product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
+            <isslot id="home-products-m" description="Product tiles on the home page." context="global" />
+        </div>
+    </div>
+
+    <div class="homepage shop-the-style">
+        <isslot id="home-product-set-m" description="Link to a Product Set." context="global" />
+    </div>
+    <div class="home-email-signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="input-group">
+                        <span class="input-group-append spanExercise5">
+                            <a class="btn btn-link btnExercise5" href="${URLUtils.url('BckExercise5-Show')}">${Resource.msg('button.form.newslettersignup', 'homePage', null)} </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-5 email-description">${Resource.msg('description.form.emailsignup', 'homePage', null)}</div>
+            </div>
+        </div>
+    </div>
+</isdecorate>
