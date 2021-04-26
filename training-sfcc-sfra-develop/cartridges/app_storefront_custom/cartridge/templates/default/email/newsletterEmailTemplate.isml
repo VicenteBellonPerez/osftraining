@@ -1,0 +1,9 @@
+<body>
+    <h3>${pdict.emailHeader}</h3>
+    <br/>
+    <span>${pdict.couponText}</span>
+    <isif condition="${pdict.couponCode}">
+        <br/>
+        <span>${pdict.couponCode}</span>
+    </isif>
+</body>

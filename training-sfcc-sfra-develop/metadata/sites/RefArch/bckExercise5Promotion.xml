@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<promotions xmlns="http://www.demandware.com/xml/impex/promotion/2008-01-31">
+
+    <campaign campaign-id="PromotionTests">
+        <enabled-flag>true</enabled-flag>
+        <campaign-scope>
+            <applicable-online/>
+        </campaign-scope>
+        <start-date>2021-04-23T00:00:00.000Z</start-date>
+        <customer-groups match-mode="any">
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+        <coupons>
+            <coupon coupon-id="bckExercise5Coupon"/>
+        </coupons>
+    </campaign>
+
+        <description>Electronics Product Promotions</description>
+        <enabled-flag>false</enabled-flag>
+        <campaign-scope>
+            <applicable-online/>
+        </campaign-scope>
+        <customer-groups match-mode="any">
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+    </campaign>
+
+    <global-promotion-settings>
+        <global-excluded-products>
+            <included-products>
+                <condition-group>
+                    <category-condition catalog-id="storefront-catalog-m-en" operator="is equal">
+                        <category-id>electronic-games</category-id>
+                    </category-condition>
+                </condition-group>
+            </included-products>
+        </global-excluded-products>
+    </global-promotion-settings>
+
+        <enabled-flag>false</enabled-flag>
+        <archived-flag>false</archived-flag>
+        <searchable-flag>false</searchable-flag>
+        <refinable-flag>false</refinable-flag>
+        <prevent-requalifying-flag>false</prevent-requalifying-flag>
+        <prorate-across-eligible-items-flag>false</prorate-across-eligible-items-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">20%offOrderAmountOver200</name>
+        <name xml:lang="fr-FR">20%RabaisCommandeValeurSup200</name>
+        <name xml:lang="it-IT">20% di sconto su ordini con importo superiore a € 200</name>
+        <name xml:lang="ja-JP">注文金額20,000円以上で20%割引</name>
+        <name xml:lang="zh-CN">20%订单优惠金额超过200元</name>
+        <callout-msg xml:lang="x-default">20%offOrderAmountOver200</callout-msg>
+        <callout-msg xml:lang="fr-FR">20%RabaisCommandeValeurSup200</callout-msg>
+        <callout-msg xml:lang="it-IT">20% di sconto su ordini con importo superiore a € 200</callout-msg>
+        <callout-msg xml:lang="ja-JP">注文金額20,000円以上で20%割引</callout-msg>
+        <callout-msg xml:lang="zh-CN">20%订单优惠金额超过200元</callout-msg>
+        <details xml:lang="x-default">20%offOrderAmountOver200</details>
+        <details xml:lang="fr-FR">20%RabaisCommandeValeurSup200</details>
+        <details xml:lang="it-IT">20% di sconto su ordini con importo superiore a € 200</details>
+        <details xml:lang="ja-JP">注文金額20,000円以上で20%割引</details>
+        <details xml:lang="zh-CN">20%订单优惠金额超过200元</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-m-en" operator="is equal">
+                            <category-id>mens-clothing</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-m-en" operator="is equal">
+                            <category-id>mens-clothing-pants</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <payment-methods>
+                <method-id>CREDIT_CARD</method-id>
+            </payment-methods>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>200.0</threshold>
+                    <percentage>20.0</percentage>
+                </discount>
+            </discounts>
+            <exclude-discounted-products>false</exclude-discounted-products>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="20AmountoffExercise5Bck">
+        <enabled-flag>true</enabled-flag>
+        <archived-flag>false</archived-flag>
+        <searchable-flag>false</searchable-flag>
+        <refinable-flag>false</refinable-flag>
+        <prevent-requalifying-flag>false</prevent-requalifying-flag>
+        <prorate-across-eligible-items-flag>false</prorate-across-eligible-items-flag>
+        <exclusivity>global</exclusivity>
+        <name xml:lang="x-default">20 amount off Exercise 5</name>
+        <product-promotion-rule>
+            <simple-discount>
+                <amount>20.0</amount>
+            </simple-discount>
+        </product-promotion-rule>
+    </promotion>
+
+
+    <promotion-campaign-assignment promotion-id="20AmountoffExercise5Bck" campaign-id="PromotionTests">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+
+
+</promotions>

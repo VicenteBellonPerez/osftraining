@@ -1,2 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31"/>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <custom-type type-id="NewsletterSubscription">
+        <staging-mode>no-staging</staging-mode>
+        <storage-scope>organization</storage-scope>
+        <retention-days>30</retention-days>
+        <key-definition attribute-id="Email">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <attribute-definitions>
+            <attribute-definition attribute-id="Birthday">
+                <display-name xml:lang="x-default">Birthday</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="BrandPreferences">
+                <display-name xml:lang="x-default">Brand Preferences</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="CategoryPreferences">
+                <display-name xml:lang="x-default">Category Preferences</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="FullName">
+                <display-name xml:lang="x-default">Full Name</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="Gender">
+                <display-name xml:lang="x-default">Gender</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="ListID">
+                <display-name xml:lang="x-default">List ID</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="Locale">
+                <display-name xml:lang="x-default">Locale</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="MarketingAgreement">
+                <display-name xml:lang="x-default">Marketing Agreement</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="MerketingAgreement">
+                <display-name xml:lang="x-default">Marketing Agreement</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="PersonalInformationAgreement">
+                <display-name xml:lang="x-default">Personal Information Agreement</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="couponCode">
+                <display-name xml:lang="x-default">Coupon Code</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="guess_isSubscribed">
+                <display-name xml:lang="x-default">IsSubscribed</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="guess_latestSubscribedDate">
+                <display-name xml:lang="x-default">LatestSubscribedDate</display-name>
+                <type>datetime</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+        </attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Newsletter">
+                <display-name xml:lang="x-default">Newsletter</display-name>
+                <attribute attribute-id="Email"/>
+                <attribute attribute-id="ListID"/>
+                <attribute attribute-id="Locale"/>
+                <attribute attribute-id="PersonalInformationAgreement"/>
+                <attribute attribute-id="MarketingAgreement"/>
+                <attribute attribute-id="FullName"/>
+                <attribute attribute-id="Birthday"/>
+                <attribute attribute-id="Gender"/>
+                <attribute attribute-id="CategoryPreferences"/>
+                <attribute attribute-id="BrandPreferences"/>
+                <attribute attribute-id="couponCode"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
+</metadata>
