@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    <job job-id="bckExercise6" priority="0">
+        <description>Job created for the backend exercise 6</description>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="bckExercise6" type="ExecuteScriptModule" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="ExecuteScriptModule.Module">app_storefront_custom/cartridge/scripts/job/exercise6.js</parameter>
+                    <parameter name="ExecuteScriptModule.FunctionName">generateCatalogFile</parameter>
+                    <parameter name="ExecuteScriptModule.Transactional">false</parameter>
+                    <parameter name="brand">guess</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2021-04-27Z</date>
+                <time>08:02:04.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
     <job job-id="RebuildURLs" priority="0">
         <description/>
         <parameters/>
