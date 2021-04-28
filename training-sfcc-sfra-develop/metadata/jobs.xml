@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    
+    <job job-id="bckExercise7" priority="0">
+        <description/>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="bckExercise7" type="custom.BckExercise7StepType" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="destFolder">TEMP</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2021-04-28Z</date>
+                <time>13:58:07.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
     <job job-id="RebuildURLs" priority="0">
         <description/>
         <parameters/>

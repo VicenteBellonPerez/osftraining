@@ -1,0 +1,52 @@
+{
+  "step-types":
+  {
+    "script-module-step":
+    [
+      {
+        "@type-id":"custom.BckExercise7StepType",
+        "@supports-parallel-execution":"true",
+        "@supports-site-context":"true",
+        "@supports-organization-context":"false",
+        "description":"Backend Exercise 7 custom script step type",
+        "module":"app_storefront_custom/cartridge/scripts/job/exercise7.js",
+        "function":"exportOrders",
+        "transactional":"true",
+        "timeout-in-seconds":"1000",
+        "parameters":
+        {
+          "parameter":
+          [
+            {
+              "@name":"destFolder",
+              "@type":"string",
+              "@required":"false",
+              "description":"An optional string parameter, length must be between 10 and 50",
+              "min-length":"1",
+              "max-length":"50",
+              "default-value":"TEMP"
+            }
+          ]
+        },
+        "status-codes": 
+        {
+            "status": 
+            [
+              {
+                  "@code": "ERROR",
+                  "description": "Used when the step failed with an error."
+              },
+              {
+                  "@code": "FINISHED",
+                    "description": "Used when the step finished successfully."
+              },
+              {
+                  "@code": "FINISHED_WITH_WARNINGS",
+                  "description": "Used when the step finished with warnings."
+              }
+            ]
+        }
+      }
+    ]
+  }
+}
