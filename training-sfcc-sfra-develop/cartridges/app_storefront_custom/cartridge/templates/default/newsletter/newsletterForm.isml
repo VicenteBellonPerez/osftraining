@@ -1,0 +1,56 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/login.css');
+    </isscript>
+
+    <div class="hero slant-down login-banner">
+        <h1 class="page-title">${Resource.msg('newsletter.header.text', 'homePage', null)}</h1>
+    </div>
+    <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
+    <div class="container subscribe-newsletter-container">
+        <div class="newsletter-error"/>
+        <div class="newsletter-success"/>
+        <form action="${URLUtils.url('BckExercise5-Subscribe')}" method="POST">
+            <div class="row">
+                <div class="col-sm-7 divRowFormExercise5">
+                    <div class="form-group" ${pdict.form.newsletterEmail.mandatory === true ? 'required' : ''}>
+                        <label class="form-control-label" for="newsletterEmail"><isprint value="${pdict.form.newsletterEmail.label}" encoding="on" /></label>
+                        <input type="text" id="newsletterEmail" class="form-control" <isprint value="${pdict.form.newsletterEmail.attributes}" encoding="off" />>
+                        <div class="invalid-feedback-email"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">                
+                <div class="col-sm-5 divRowFormExercise5">
+                    <div class="form-group ${pdict.form.newsletterFirstName.mandatory === true ? 'required' : ''}">
+                        <label class="form-control-label" for="newsletterFirstName"><isprint value="${pdict.form.newsletterFirstName.label}" encoding="on" /></label>
+                        <input type="text" id="newsletterFirstName" class="form-control" <isprint value="${pdict.form.newsletterFirstName.attributes}" encoding="off" />>
+                        <div class="invalid-feedback-firstName"></div>
+                    </div>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-sm-5 divRowFormExercise5">
+                    <div class="form-group ${pdict.form.newsletterLastName.mandatory === true ? 'required' : ''}">
+                        <label class="form-control-label" for="newsletterLastName"><isprint value="${pdict.form.newsletterLastName.label}" encoding="on" /></label>
+                        <input type="text" id="newsletterLastName" class="form-control" <isprint value="${pdict.form.newsletterLastName.attributes}" encoding="off" />>
+                        <div class="invalid-feedback-lastName"></div>
+                    </div>
+                </div>       
+            </div>                         
+            <div class="row">  
+                <div class="col-sm-5 divRowFormExercise5">
+                    <div class="input-group">
+                        <span class="input-group-append">
+                            <button type="button" class="remove-btn-lg subscribe-newsletter btn btn-light" data-toggle="modal" id="buttonNewsletterSubscription"
+                                data-target=".subscribe-newsletter-container #newsletterModal" 
+                                data-action="${URLUtils.url('BckExercise5-Subscribe')}">${Resource.msg('button.form.emailsignup', 'homePage', null)}</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>            
+        <isinclude template="newsletter/newsletterFormModal"/>
+    </div>
+</isdecorate>

@@ -1,0 +1,32 @@
+.btnExercise5 {
+    width: 100%;
+    background-color: azure;
+    font-weight: 700;
+}
+
+.spanExercise5 {
+    width: 100%;
+}
+
+.divRowFormExercise5 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.formFieldErrorMark {
+    border-color: red;
+    border-width: unset;
+}
+
+.invalid-feedback-email, .invalid-feedback-firstName, .invalid-feedback-lastName {
+    color: red;
+}
+
+.alert-success-text {
+    border-width: thin;
+    border-color: green;
+    background-color: rgb(182, 241, 182);
+    margin-bottom: 1em;
+    height: 2em;
+
+}
